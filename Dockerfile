@@ -4,12 +4,18 @@ RUN apt-get update && \
     apt-get install -y \
     radare2 \
     volatility \
-    binwalk && \
+    binwalk \
+    gdb \
+    vim \
+    zsh && \
 
 # Cleanup
     rm -rf /var/lib/apt/lists/*    
 
 WORKDIR /workdir
+
+# Add GEF
+RUN wget -q -O- https://github.com/hugsy/gef/raw/master/scripts/gef.sh | sh
 
 # Add local files
 ADD ./bash_tweaks/* /root/

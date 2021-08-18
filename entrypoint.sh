@@ -15,6 +15,7 @@ ref=$(curl --silent https://api.github.com/repos/hugsy/gef/git/ref/heads/${branc
 # Download the file
 curl --silent --location --output "${HOME}/.gef-${ref}.py" "https://github.com/hugsy/gef/raw/${branch}/gef.py"
 
+# fix encoding bug
 sed -i 's/\\u27a4 />/g' ${HOME}/.gef-${ref}.py
 
 # Create the new gdbinit

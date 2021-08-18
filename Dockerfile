@@ -32,7 +32,5 @@ ADD ./bash_tweaks/* /root/
 RUN mv /root/motd /etc/motd
 ADD ./configs/.radare2rc /root/
 ADD entrypoint.sh /opt/
-# fix encoding bug
-#RUN sed -i 's/\\u27a4 />/g' ~/.gef*
 
 ENTRYPOINT /opt/entrypoint.sh 

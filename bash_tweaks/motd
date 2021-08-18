@@ -3,13 +3,10 @@
   / /_/ // _ \| | / // _ \ / ___// ___// // __ \ / __ `/
  / _, _//  __/| |/ //  __// /   (__  )/ // / / // /_/ / 
 /_/ |_| \___/ |___/ \___//_/   /____//_//_/ /_/ \__, /  
-                                               /____/                                 
-          
-Welcome to my Reversing Docker Image. It contains relevant Tools for reversing tasks.
-Feel free to contribute at https://github.com/Anth0rx/reversing-docker.
+by S0teri                                      /____/                                 
 
 At the moment this image contains the following tools:
 	> radare2 - unix-like reverse engineering framework
-	> Volatility
-        > binwalk
+    > binwalk
+    > gdb (gef)
 
